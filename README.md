@@ -67,7 +67,7 @@ New-GPRegistryValue -Key "HKLM\SYSTEM\CurrentControlSet\Services\NetBT\Parameter
 ### Configurer l'attribut ms-DS-MachineAccountQuota = 0
 
 ```
-Set-ADDomain -Identity "DC=it-connect,DC=local" -Replace @{"ms-DS-MachineAccountQuota"="0"}
+Set-ADDomain -Identity "DC=test,DC=fr" -Replace @{"ms-DS-MachineAccountQuota"="0"}
 ```
 
 
