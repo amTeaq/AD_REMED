@@ -7,6 +7,8 @@
 dsacls "OU=Computers,DC=example,DC=com" /D "SELF:WP;msDS-KeyCredentialLink"
 ```
 
+AUDIT DE l'atrribut: https://www.blackhillsinfosec.com/enable-auditing-of-changes-to-msds-keycredentiallink/
+
 ## Restreindre les permissions sur d'ajout d'une entrée DNS par les users du domaine
 
 ```
