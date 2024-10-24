@@ -22,7 +22,8 @@ Sélectionner:
 
 En effet, ces modifications empêcheront un computer d'éditer son attribut "msDS-KeyCredentialLink":
 
-![image](https://github.com/user-attachments/assets/4356989e-923c-4c83-92dd-61a578b41f4c)
+![image](https://github.com/user-attachments/assets/616c8d36-98c2-41a1-87d0-f2d4f3d9aa37)
+
 
 
 ### Effet de bord:
