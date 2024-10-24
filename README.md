@@ -3,11 +3,15 @@
 
 ## Restreindre les permissions des machines sur l'éditer de leurs attributs msDS-KeyCredentialLink (Attaque shadowCredentials)
 
-```
-dsacls "OU=Computers,DC=example,DC=com" /D "SELF:WP;msDS-KeyCredentialLink"
-```
+View -> Advanced Features
+-> TON_DOMAIN.FR -> Properties -> Security -> SELF, Advanced
+-> View the: 
+- Principal: SELF
+- Access: Validated write to computer attributes
 
-AUDIT DE l'atrribut: https://www.blackhillsinfosec.com/enable-auditing-of-changes-to-msds-keycredentiallink/
+Déseclectionné
+
+Activer l'audit de l'atrribut: https://www.blackhillsinfosec.com/enable-auditing-of-changes-to-msds-keycredentiallink/
 
 ## Restreindre les permissions sur d'ajout d'une entrée DNS par les users du domaine
 
