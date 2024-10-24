@@ -24,7 +24,7 @@ Puis:
 - Applies to: This object and all descendant objects
 - Permissions:
 
-![image](https://github.com/user-attachments/assets/d95bd2e2-a1a0-4b2d-9867-20d6bcbe7f48)
+![image](https://github.com/user-attachments/assets/97fa0717-4cfe-4ec7-b63b-47bf4341a8db)
 
 
 Poc:
