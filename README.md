@@ -15,8 +15,26 @@ dsacls "DC=votre-domaine,DC=com" /D "Domain Users:CC;dnsNode"
 
 ### Restreindre les permissions sur l'attribut msDS-AllowedToActOnBehalfOfOtherIdentity (attaque RBCD)
 
+View -> Advanced Features
+-> OU Computer -> Properties -> Security -> SELF, Advanced -> Permissions ->  Add -> Select a principal -> SELF (Enter the object name to select)
+
+Puis:
+
+- Type: Deny
+- Applies to: This object and all descendant objects
+- Permissions:
+
+![image](https://github.com/user-attachments/assets/d95bd2e2-a1a0-4b2d-9867-20d6bcbe7f48)
+
+
+Poc:
+
 ```
-dsacls "OU=Computers,DC=example,DC=com" /D "SELF:WP;msDS-AllowedToActOnBehalfOfOtherIdentity"
+# rbcd.py -delegate-from 'qcs' -delegate-to 'aisicomputer$' -dc-ip "192.168.56.101" -action write "test.fr"/"aisicomputer$":'PASSWORD' 
+Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Attribute msDS-AllowedToActOnBehalfOfOtherIdentity is empty
+[-] Could not modify object, the server reports insufficient rights: 00002098: SecErr: DSID-031514A0, problem 4003 (INSUFF_ACCESS_RIGHTS), data 0
 ```
 
 ### Activer le SMB signing via GPO
