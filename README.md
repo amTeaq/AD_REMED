@@ -20,13 +20,15 @@ Sélectionner:
 ![image](https://github.com/user-attachments/assets/ec20a336-bf59-4046-aebe-bd132333de30)
 
 
-En effet, ces modifications enpêcheront un computer d'éditer son attribut "msDS-KeyCredentialLink".
+En effet, ces modifications empêcheront un computer d'éditer son attribut "msDS-KeyCredentialLink".
 
 ### Effet de bord:
 - Impact sur les Azure AD Joined Devices ou Hybrid Azure AD Joined Devices
--> Bloquer l'inscription à Windows Hello for Business
+-> Bloque l'inscription à Windows Hello for Business
 -> Rendre impossible l'authentification avec des clés FIDO2
 -> Empêcher le bon fonctionnement des scénarios d'authentification hybride qui reposent sur cet attribut, comme l'authentification via des appareils Azure AD-Join
+
+### Avant tout déploiement, réaliser un audit des logs pour comprendre l'impact que pourrait avoir cette remédiation:
 
 Activer l'audit de l'atrribut: https://www.blackhillsinfosec.com/enable-auditing-of-changes-to-msds-keycredentiallink/
 
