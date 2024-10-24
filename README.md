@@ -1,19 +1,19 @@
 # AD_REMED
 
 
-### Restreindre les permissions des machines sur l'éditer de leurs attributs msDS-KeyCredentialLink (Attaque shadowCredentials)
+## Restreindre les permissions des machines sur l'éditer de leurs attributs msDS-KeyCredentialLink (Attaque shadowCredentials)
 
 ```
 dsacls "OU=Computers,DC=example,DC=com" /D "SELF:WP;msDS-KeyCredentialLink"
 ```
 
-### Restreindre les permissions sur d'ajout d'une entrée DNS par les users du domaine
+## Restreindre les permissions sur d'ajout d'une entrée DNS par les users du domaine
 
 ```
 dsacls "DC=votre-domaine,DC=com" /D "Domain Users:CC;dnsNode"
 ```
 
-### Restreindre les permissions sur l'attribut msDS-AllowedToActOnBehalfOfOtherIdentity (attaque RBCD)
+## Restreindre les permissions sur l'attribut msDS-AllowedToActOnBehalfOfOtherIdentity (attaque RBCD)
 
 View -> Advanced Features
 -> OU Computer -> Properties -> Security -> SELF, Advanced -> Permissions ->  Add -> Select a principal -> SELF (Enter the object name to select)
@@ -37,7 +37,7 @@ Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies
 [-] Could not modify object, the server reports insufficient rights: 00002098: SecErr: DSID-031514A0, problem 4003 (INSUFF_ACCESS_RIGHTS), data 0
 ```
 
-### Activer le SMB signing via GPO
+## Activer le SMB signing via GPO
 
 ```
 New-GPO -Name "SMB Signing Policy" | New-GPLink -Target "OU=Computers,DC=example,DC=com"
