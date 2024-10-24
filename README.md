@@ -14,7 +14,7 @@ Déselectionner:
 
 Sélectionner:
 - "Validated write to DNS host name"
-- "Validated write to MSDS Additional DNS Host Name"
+- "Validated write to MS DS Additional DNS Host Name"
 - "Validated write to service principal name"
 
 ![image](https://github.com/user-attachments/assets/ec20a336-bf59-4046-aebe-bd132333de30)
