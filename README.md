@@ -20,7 +20,10 @@ Sélectionner:
 ![image](https://github.com/user-attachments/assets/ec20a336-bf59-4046-aebe-bd132333de30)
 
 
-En effet, ces modifications empêcheront un computer d'éditer son attribut "msDS-KeyCredentialLink".
+En effet, ces modifications empêcheront un computer d'éditer son attribut "msDS-KeyCredentialLink":
+
+![image](https://github.com/user-attachments/assets/4356989e-923c-4c83-92dd-61a578b41f4c)
+
 
 ### Effet de bord:
 - Impact sur les Azure AD Joined Devices ou Hybrid Azure AD Joined Devices
