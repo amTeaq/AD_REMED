@@ -52,7 +52,7 @@ View -> Advanced Features
 Puis:
 
 - Type: Deny
-- Applies to: This object and all descendant objects
+- Applies to: Descendant Computer Objects
 - Permissions:
 
 ![image](https://github.com/user-attachments/assets/97fa0717-4cfe-4ec7-b63b-47bf4341a8db)
