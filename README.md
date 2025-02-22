@@ -1,5 +1,12 @@
 # AD_REMED
 
+#### Note
+
+- désac rid 500 local admin
+- désac service webdav
+
+
+
 
 ## Restreindre les permissions des machines sur l'éditer de leurs attributs msDS-KeyCredentialLink (Attaque shadowCredentials)
 
