@@ -5,6 +5,7 @@
 - désac rid 500 local admin
 - désac service webdav
 - disable ssh or filter outbound ssh connection (https://it-pro-berlin.de/2025/02/ssh-in-windows-server-better-still-not-good-enough/)
+- disable IPV6 stack
 
 
 
